@@ -3,9 +3,12 @@
 /*==========================================================
 Color Theme
 ==========================================================*/
-cd-foreground = black
-cd-flash = purple
-cd-background = white
+cd-darkgrey = #666
+cd-grey = #F4F6F7
+cd-blue = #29588C
+cd-bright = white
+cd-dark = black
+
 
 /*==========================================================
 Global Variables
@@ -18,18 +21,22 @@ Global Variables
 General Tag Styles
 ==========================================================*/
 body
-    background-color cd-background
-    color cd-foreground
+    background-color cd-bright
+    color cd-darkgrey
     font-family: Arial, Helvetica, sans-serif
     text-align: center
     font-size: 12pt
-    height 100vh
-    width 100%
     overflow hidden
+    overflow-y auto
 
 h1
-    font-size: 17pt
+    font-size: 32pt
+    color cd-blue
 h2
-    font-size: 15pt
+    font-size: 22pt
+    color cd-dark
 p
-    font-size: 12pt
+    font-size: 14pt
+svg
+    width inherit
+    height inherit

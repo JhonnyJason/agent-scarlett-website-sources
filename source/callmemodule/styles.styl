@@ -1,0 +1,59 @@
+// callme styles
+#callme
+    position fixed
+    top 15px
+    right 15px
+    padding 5px
+    color cd-dark
+    // border solid 3px
+    border-radius: 50%
+    width 50px
+    height 50px
+    // box-sizing: border-box        
+    cursor: pointer
+    z-index 10
+    transition background-color 0.3s
+    svg
+        cursor: pointer
+
+#callme.active
+#callme:hover
+    background-color cd-bright
+    // background-color cd-blue
+    #call-frame
+        transform scale(1.0)
+        opacity: 1.0
+
+
+#call-frame
+    position: absolute
+    top 50%
+    right 50%
+    width 300px
+    height auto
+    // transform translateX(100%) scale(0.0)
+    transform-origin: top right 
+    transform scale(0.0) 
+    opacity 0
+    background-color cd-bright
+    transition all 0.3s
+    z-index -1
+    padding 20px 20px
+    border-radius: 3px
+
+    h2
+        margin-bottom 30px
+        text-align: left
+#chat-line
+#email-line
+#phone-line
+    display flex
+    align-items: center
+    margin-bottom 20px
+    padding-left 10px
+    svg
+        height 20px
+        width 20px
+        margin-right 7px
+    a:hover
+        text-decoration: underline
